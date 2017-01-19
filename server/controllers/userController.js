@@ -1,5 +1,4 @@
 var User = require('../models/userModel.js');
-var config = require('../../config.js');
 var http = require('http');
 
 module.exports = {
@@ -23,8 +22,8 @@ module.exports = {
         path: '/enroll',
         headers: {
           'Content-Type': 'application/json',
-          'app_id': config.kairos.id,
-          'app_key': config.kairos.key
+          'app_id': process.env.KAIROS_ID,
+          'app_key': process.env.KAIROS_KEY
         }
       };
       let data = {
@@ -63,8 +62,8 @@ module.exports = {
         path: '/recognize',
         headers: {
           'Content-Type': 'application/json',
-          'app_id': config.kairos.id,
-          'app_key': config.kairos.key
+          'app_id': process.env.KAIROS_ID,
+          'app_key': process.env.KAIROS_KEY
         }
       };
       let data = {
