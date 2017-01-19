@@ -1,6 +1,3 @@
 node_modules/
 client/lib/
-config.js
-configGoogle.js
-config.json
-client/app/config.js
+*.env

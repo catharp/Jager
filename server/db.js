@@ -1,9 +1,8 @@
 var mongoose = require("mongoose");
-var config = require('../config.js');
 
-var USER = process.env.DB_USER || config.db.user;
-var PASSWORD = process.env.DB_PASSWORD || config.db.password;
+var USER = process.env.DB_USER;
+var PASS = process.env.DB_PASS;
 
-mongoose.connect(`mongodb://${USER}:${PASSWORD}@ds133418.mlab.com:33418/heroku_2thfdbfj`);
+mongoose.connect(`mongodb://${USER}:${PASS}@ds117849.mlab.com:17849/heroku_49vpf6ff`);
 
 module.exports = mongoose.connection;

@@ -39,22 +39,17 @@ MongoDB with Mongoose as an ORM
 From within the root directory:
 
 1. Run npm install
-2. For local environments, create a config.js file that contains an export of a db object with a username and password. Here is a sample format:
+2. For local environments, create a .env file according to the following template:
 
-module.exports = {
-  db: {
-   user: 'yourUsername',
-   password: 'yourPassword'
-  }
-};
+DB_USER=
+DB_PASS=
 
-3. For local environments, create a configGoogle.js file that contains info for the google API. Here is a sample:
-module.exports.googleConfig = {
-"GOOGLE_API_URL":"https://www.googleapis.com/customsearch/v1",
-"SEARCH_ENGINE_ID":"yourEngineID",
-"API_KEY":"yourAPIKey"
-};
+GOOGLE_URL=https://www.googleapis.com/customsearch/v1
+GOOGLE_ID=
+GOOGLE_KEY=
 
+KAIROS_ID=
+KAIROS_KEY=
 
 ### Roadmap
 
